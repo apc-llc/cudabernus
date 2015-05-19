@@ -21,8 +21,8 @@ $ cd ..
 $ cd moose/libtool
 $ mkdir build
 $ cd build
-$ ../configure --prefix=$(pwd)/../installed --enable-openmp PETSC_DIR=$(pwd)/../../../petsc/install 
-$ make -j12
+$ ../configure --prefix=$(pwd)/../installed --enable-openmp LIBS="-L$(pwd)/../../../petsc/install/lib -lpetsc -lblas"
+$ CPLUS_INCLUDE_PATH=$(pwd)/../../../petsc/install/include make -j12
 $ make install
 $ cd ../../..
 $ cd ewe
