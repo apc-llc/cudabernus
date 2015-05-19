@@ -4,3 +4,6 @@
 [submodule "ewe"]
 	path = ewe
 	url = https://github.com/apc-llc/ewe
+[submodule "petsc"]
+	path = petsc
+	url = https://github.com/petsc/petsc.git
