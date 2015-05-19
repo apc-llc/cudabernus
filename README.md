@@ -3,3 +3,9 @@
 Software Atelier: Supercomputing and Simulations '2015 @ the University of Lugano
 
 Course project
+
+```
+$ git clone https://github.com/apc-llc/cudabernus.git
+$ git submodule init
+$ git submodule update
+```

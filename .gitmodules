@@ -1,0 +1,6 @@
+[submodule "moose"]
+	path = moose
+	url = https://github.com/apc-llc/moose
+[submodule "ewe"]
+	path = ewe
+	url = https://github.com/apc-llc/ewe
