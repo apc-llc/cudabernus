@@ -18,7 +18,7 @@ $ ./configure --prefix=$(pwd)/install
 $ make MAKE_NP=12
 $ make PETSC_DIR=$(pwd) PETSC_ARCH=arch-linux2-c-debug install
 $ cd ..
-$ cd moose/libtool
+$ cd moose/libmesh
 $ mkdir build
 $ cd build
 $ ../configure --prefix=$(pwd)/../installed --enable-openmp LIBS="-L$(pwd)/../../../petsc/install/lib -lpetsc -lblas"
@@ -26,5 +26,5 @@ $ CPLUS_INCLUDE_PATH=$(pwd)/../../../petsc/install/include make -j12
 $ make install
 $ cd ../../..
 $ cd ewe
-$ make -j12
+$ NVCC=$(which nvcc) PATH=.:$PATH CPLUS_INCLUDE_PATH=$(pwd)/../petsc/install/include make -j12
 ```
