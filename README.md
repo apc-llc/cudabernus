@@ -14,7 +14,7 @@ $ git submodule update
 $ cd moose
 $ git submodule init
 $ git submodule update
-$ cd petsc
+$ cd ../petsc
 $ ./configure --prefix=$(pwd)/install
 $ make MAKE_NP=12
 $ make PETSC_DIR=$(pwd) PETSC_ARCH=arch-linux2-c-debug install
