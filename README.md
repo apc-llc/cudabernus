@@ -8,6 +8,7 @@ Course project
 
 ```
 $ git clone https://github.com/apc-llc/cudabernus.git
+$ cd cudabernus
 $ git submodule init
 $ git submodule update
 $ cd moose
