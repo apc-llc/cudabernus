@@ -28,9 +28,11 @@ $ make install
 $ cd ../../..
 $ cd ewe
 $ NVCC=$(which nvcc) PATH=.:$PATH CPLUS_INCLUDE_PATH=$(pwd)/../petsc/install/include make -j12
+```
 
 ### How to build on CSCS Piz Daint
 
+```
 $ module switch PrgEnv-cray PrgEnv-gnu
 $ module load cudatoolkit
 $ module load openblas
@@ -55,4 +57,5 @@ $ make install
 $ cd ../../..
 $ cd ewe
 $ NVCC=$(which nvcc) PATH=.:$PATH CPLUS_INCLUDE_PATH=$(pwd)/../petsc/arch-linux2-c-debug/include make -j12
+```
 
